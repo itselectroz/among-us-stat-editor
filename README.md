@@ -10,3 +10,9 @@ This is an educational project for researching the format of the stats file in t
 `npm i`
 
 `node main.js`
+
+## Notes
+
+Please make sure you exit the program (input q or simply ctrl + c) before opening Among Us.
+
+Failure to do so will most likely result in your stats being **wiped**.

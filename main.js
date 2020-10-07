@@ -72,11 +72,18 @@ for(let statName in statTypes) {
 
 let options = Object.keys(statTypes).filter(v => !v.startsWith('##'));
 
-function exit(fd) {
-	close(fd, () => process.exit());
+let _fd;
+
+function exit() {
+	close(_fd, () => process.exit());
 }
 
+process.on('SIGINT', () => {
+	exit();
+});
+
 open(statsFile, 'r+', (err, fd) => {
+	_fd = fd;
 	if(err) {
 		console.error(err);
 		return;

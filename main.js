@@ -36,7 +36,7 @@ let statTypes = {
 	"Times Murdered": types.int32,
 	"Times Ejected": types.int32,
 	"Crewmate Streak": types.int32,
-	"Times Impstor": types.int32,
+	"Times Impostor": types.int32,
 	"Times Crewmate": types.int32,
 	"Games Started": types.int32,
 	"Games Finished": types.int32,
